@@ -1,0 +1,12 @@
+
+version: "3"
+
+services:
+  jupyter:
+    build:
+      context: .
+    # To use a different port of host, change the first 8888.
+    image: lgo
+    ports:
+      - "8888:8888"
+    container_name: lgo
