@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run tests
-        run: docker-compose --file docker-compose.test.yml --run ${{ matrix.target }}
+        run: docker-compose --file docker-compose.test.yml run ${{ matrix.target }}
 
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
