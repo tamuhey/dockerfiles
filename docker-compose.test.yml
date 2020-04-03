@@ -2,11 +2,11 @@ version: "3"
 services: 
     mecab:
         build:
-            dockerfile: dockerfiles/mecab/Dockerfile
+            dockerfile: mecab/Dockerfile
             context: .
         command: echo "テスト" | mecab
     juman:
         build:
-            dockerfile: dockerfiles/juman/Dockerfile
+            dockerfile: juman/Dockerfile
             context: .
         command: echo "テスト" | jumanpp
